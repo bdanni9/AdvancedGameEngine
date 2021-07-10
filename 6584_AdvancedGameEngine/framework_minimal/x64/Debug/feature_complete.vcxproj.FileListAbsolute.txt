@@ -1,0 +1,2 @@
+C:\Users\HP\Desktop\Start\framework_minimal\x64\Debug\feature_complete.exe
+C:\Users\HP\Desktop\Start\framework_minimal\x64\Debug\feature_complete.pdb
