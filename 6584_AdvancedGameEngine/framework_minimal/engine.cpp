@@ -41,9 +41,30 @@ Engine::Engine(const char* game_name, Configuration* config)
 
 	};
 
+	const auto initialize_gl = [this]()
+	{
+		const auto gl_debug_message_callback = [](
+			GLenum,
+			GLenum type,
+			GLuint,
+			GLenum severity,
+			GLsizei,
+			const GLchar* message,
+			const void*)
+		{
+			if (severity > GL_DEBUG_SEVERITY_NOTIFICATION)
+			{
+				fprintf(stderr, "GL CALLBACK: %s type = 0x%x, severity = 0x%x, message = %s\n",
+					(type == GL_DEBUG_TYPE_ERROR ? "** GL ERROR **" : ""),
+					type, severity, message);
+				std::cout << glGetError() << std::endl;
+			}
+		};
+	};
+
 	initialize_glfw();
 	initialize_glew();
-
+	initialize_gl();
 }
 Engine::~Engine()
 {
@@ -68,8 +89,32 @@ void Engine::simulate_physics(const double seconds_to_simulate, const Assets* as
 		game_object->simulate_physics(seconds_to_simulate, assets, scene, config);
 	}
 }
-void Engine::render(const double, const Assets*, const Scene*, const Configuration*)
+void Engine::render(const double seconds_to_simulate, const Assets* assets, const Scene* scene, const Configuration* config)
 {	
+	const auto prepare = [this]()
+	{
+		glfwSwapBuffers(_window);
+		glClearColor(0.0f, 0.3f, 0.0f, 0.0f);
+		glClear(GL_COLOR_BUFFER_BIT);
+	};
+	const auto render_gameobjects = [this, assets, config, scene, seconds_to_simulate]()
+	{
+		for (auto game_object : scene->get_game_objects())
+		{
+			game_object->render(seconds_to_simulate, assets, scene, config);
+		}
+	};
+	const auto cleanup = [this]()
+	{
+		glBindVertexArray(0);
+		glUseProgram(0);
+	};
+
+	prepare();
+	render_gameobjects();
+	cleanup();
+
+
 }
 
 GLFWwindow* Engine::window() const

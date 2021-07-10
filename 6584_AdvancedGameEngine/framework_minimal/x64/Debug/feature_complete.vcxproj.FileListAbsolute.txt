@@ -1,2 +1,4 @@
 C:\Users\HP\Desktop\Start\framework_minimal\x64\Debug\feature_complete.exe
 C:\Users\HP\Desktop\Start\framework_minimal\x64\Debug\feature_complete.pdb
+C:\Users\HP\Desktop\AdvancedGameEngine\6584_AdvancedGameEngine\framework_minimal\x64\Debug\feature_complete.exe
+C:\Users\HP\Desktop\AdvancedGameEngine\6584_AdvancedGameEngine\framework_minimal\x64\Debug\feature_complete.pdb
