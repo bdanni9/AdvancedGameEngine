@@ -60,6 +60,27 @@
     <ClCompile Include="shader.cpp">
       <Filter>Source Files\Assets\Shaders</Filter>
     </ClCompile>
+    <ClCompile Include="shader_program.cpp">
+      <Filter>Source Files\Assets\Shader Programs</Filter>
+    </ClCompile>
+    <ClCompile Include="Triangle_Mesh.cpp">
+      <Filter>Source Files\Assets\Meshes</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh.cpp">
+      <Filter>Source Files\Assets\Meshes</Filter>
+    </ClCompile>
+    <ClCompile Include="colored_2D_shader_program.cpp">
+      <Filter>Source Files\Assets\Shader Programs</Filter>
+    </ClCompile>
+    <ClCompile Include="Pointy_Head.cpp">
+      <Filter>Source Files\Game_Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Square_Mesh.cpp">
+      <Filter>Source Files\Assets\Meshes</Filter>
+    </ClCompile>
+    <ClCompile Include="Blocky.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="asset.h">
@@ -89,5 +110,34 @@
     <ClInclude Include="shader.h">
       <Filter>Source Files\Assets\Shaders</Filter>
     </ClInclude>
+    <ClInclude Include="shader_program.h">
+      <Filter>Source Files\Assets\Shader Programs</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh.h">
+      <Filter>Source Files\Assets\Meshes</Filter>
+    </ClInclude>
+    <ClInclude Include="Triangle_Mesh.h">
+      <Filter>Source Files\Assets\Meshes</Filter>
+    </ClInclude>
+    <ClInclude Include="colored_2D_shader_program.h">
+      <Filter>Source Files\Assets\Shader Programs</Filter>
+    </ClInclude>
+    <ClInclude Include="Pointy_Head.h">
+      <Filter>Source Files\Game_Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Square_Mesh.h">
+      <Filter>Source Files\Assets\Meshes</Filter>
+    </ClInclude>
+    <ClInclude Include="Blocky.h">
+      <Filter>Source Files\Game_Objects</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\colored.2D.vertex_shader.glsl">
+      <Filter>Source Files\Assets\Shaders</Filter>
+    </None>
+    <None Include="Shaders\colored.2D.fragment_shader.glsl">
+      <Filter>Source Files\Assets\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>
