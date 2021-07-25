@@ -79,7 +79,10 @@
       <Filter>Source Files\Assets\Meshes</Filter>
     </ClCompile>
     <ClCompile Include="Blocky.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Game_Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Square_Box.cpp">
+      <Filter>Source Files\Game_Objects</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -129,6 +132,9 @@
       <Filter>Source Files\Assets\Meshes</Filter>
     </ClInclude>
     <ClInclude Include="Blocky.h">
+      <Filter>Source Files\Game_Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Square_Box.h">
       <Filter>Source Files\Game_Objects</Filter>
     </ClInclude>
   </ItemGroup>

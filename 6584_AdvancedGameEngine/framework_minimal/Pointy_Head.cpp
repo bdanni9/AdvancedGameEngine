@@ -24,6 +24,7 @@ void Pointy_Head::render(const double, const Assets* assets, const Scene*, const
 {
 	std::vector<GLfloat> colors =
 	{
+		//Used to change the color of the vertices in the triangle
 		1.0f, 0.0f, 0.0f, 1.0f,
 		0.0f, 1.0f, 0.0f, 1.0f,
 		0.0f, 0.0f, 1.0f, 1.0f,

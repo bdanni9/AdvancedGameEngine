@@ -94,7 +94,8 @@ void Engine::render(const double seconds_to_simulate, const Assets* assets, cons
 	const auto prepare = [this]()
 	{
 		glfwSwapBuffers(_window);
-		glClearColor(0.0f, 0.3f, 0.0f, 0.0f);
+		//This will change the background colors 
+		glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
 	};
 	const auto render_gameobjects = [this, assets, config, scene, seconds_to_simulate]()

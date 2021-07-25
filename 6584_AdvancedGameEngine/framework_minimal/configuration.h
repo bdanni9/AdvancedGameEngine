@@ -2,7 +2,9 @@
 
 struct Configuration
 {
+	//This is used to configure the screen 
 	int screen_width = 1600;
 	int screen_height = 800;
-	bool wireframe = true;
+	// This is used to enable or disable the wireframe 
+	bool wireframe = false;
 };
